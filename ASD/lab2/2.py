@@ -6,7 +6,6 @@ def matrix_to_graph(matrix):
         for j in range(len(matrix[i])):
             if matrix[i][j] == 1:
                 E.append((i, j))
-    print(V, E)
     return (V, E)
 
 
