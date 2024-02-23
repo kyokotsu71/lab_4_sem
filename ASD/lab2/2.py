@@ -6,23 +6,28 @@ def matrix_to_graph(matrix):
         for j in range(len(matrix[i])):
             if matrix[i][j] == 1:
                 E.append((i, j))
+    print(V, E)
     return (V, E)
 
 
+
 def bfs(G, source, destination):
+    source -= 1
+    destination -= 1
+
     V, E = G
     d = [float('inf')] * len(V)
     d[source] = 0
-    Q = [source]
+    queue = [source]
 
-    while Q:
-        u = Q.pop(0)
+    while queue:
+        u = queue.pop(0)
         for edge in E:
             if edge[0] == u:
                 v = edge[1]
                 if d[v] == float('inf'):
                     d[v] = d[u] + 1
-                    Q.append(v)
+                    queue.append(v)
 
     return d[destination]
 
@@ -34,4 +39,4 @@ with open("matrix.txt") as f:
     graph = matrix_to_graph(matrix)
 
 with open('result.txt', 'w', encoding='utf-8') as f:
-    f.write(f'Кратчайший путь: {bfs(graph, 1, 8)}')
+    f.write(f'Кратчайший путь: {bfs(graph, 1, 4)}')
