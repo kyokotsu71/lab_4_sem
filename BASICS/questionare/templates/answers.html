@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+</head>
+<body>
+<h1>Результаты опроса</h1>
+<h3>Хорошо ли Вы спали сегодня?</h3>
+<p>
+    <b>Да:</b> {{ answers['sleep']['yes'] }} <br>
+    <b>Нет:</b> {{ answers['sleep']['no'] }} <br>
+    <b>Наверное:</b> {{ answers['sleep']['mb'] }} <br>
+</p>
+<h3>Хотите ли вы пару по диффурам?</h3>
+<p>
+    <b>Да:</b> {{ answers['education']['yes'] }} <br>
+    <b>Нет:</b> {{ answers['education']['no'] }} <br>
+    <b>Наверное:</b> {{ answers['education']['mb'] }} <br>
+</p>
+<h3>Вы любите стоять в очереди на консультациях?</h3>
+<p>
+    <b>Да:</b> {{ answers['queue']['yes'] }} <br>
+    <b>Нет:</b> {{ answers['queue']['no'] }} <br>
+    <b>Наверное:</b> {{ answers['queue']['mb'] }} <br>
+</p>
+</body>
+</html>

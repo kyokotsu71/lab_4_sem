@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Привет!!!</title>
+</head>
+<body>
+{% if gender == 'male' %}
+<h1>Уважаемый {{username}}! (человек)</h1>
+{% elif gender == 'female' %}
+<h1>Уважаемая {{username}}! (женщина)</h1>
+{% else %}
+<h1>Уважаемый {{username}}! ({{gender}})</h1>
+{% endif %}
+    <br>А мы про Вас всё знаем!</br>
+    Например, мы знаем, что Вам сейчас {{2023 - birth_year}} лет.</br>
+<h2>Ваши увлечения:</h2>
+<ul>
+    {% for s in hobbies %}
+    <li>{{s}}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>

@@ -7,7 +7,7 @@ import requests
 class Form(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('design.ui', self)
+        uic.loadUi('mainwindow.ui', self)
         self.pushButton.clicked.connect(self.press)
 
     def press(self):

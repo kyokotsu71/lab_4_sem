@@ -38,4 +38,4 @@ with open("matrix.txt") as f:
     graph = matrix_to_graph(matrix)
 
 with open('result.txt', 'w', encoding='utf-8') as f:
-    f.write(f'Кратчайший путь: {bfs(graph, 1, 4)}')
+    f.write(f'Кратчайший путь: {bfs(graph, 1, 5)}')

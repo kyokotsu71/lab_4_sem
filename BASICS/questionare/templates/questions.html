@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопросики</title>
+</head>
+<body>
+<h1>Сейчас Вам предстоит ответить на несколько трудных вопросов! Не каждому такое по силам!</h1>
+<h4>Вы безусловно гениальны, если у Вас получилось ответить</h4>
+<form action="/results" method="post">
+    <fieldset>
+        <legend>Хорошо ли Вы спали сегодня?</legend>
+        <input type="radio" id="sleep-1" name="sleep" value="yes" checked>
+        <label for="sleep-1">Естественно</label>
+        <br>
+        <input type="radio" id="sleep-2" name="sleep" value="mb">
+        <label for="sleep-2">Да нет наверное</label>
+        <br>
+        <input type="radio" id="sleep-3" name="sleep" value="no">
+        <label for="sleep-3">Конечно нет</label>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Хотите ли вы пару по диффурам?</legend>
+        <input type="radio" id="education-1" name="education" value="yes" checked>
+        <label for="education-1">Да!</label>
+        <br>
+        <input type="radio" id="education-2" name="education" value="mb">
+        <label for="education-2">Не знаю</label>
+        <br>
+        <input type="radio" id="education-3" name="education" value="no">
+        <label for="education-3">Нет</label>
+        <br>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Вы любите стоять в очереди на консультациях?</legend>
+        <input type="radio" id="queue-1" name="queue" value="yes" checked>
+        <label for="queue-1">Конечно, целыми днями!</label>
+        <br>
+        <input type="radio" id="queue-2" name="queue" value="mb">
+        <label for="queue-2">Возможно частично</label>
+        <br>
+        <input type="radio" id="queue-3" name="queue" value="no">
+        <label for="queue-3">Никак нет</label>
+        <br>
+    </fieldset>
+    <input type="submit" value="Отправить ответы">
+</form>
+</body>
+</html>
